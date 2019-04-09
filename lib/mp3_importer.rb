@@ -8,10 +8,10 @@ class MP3Importer
   
   def files
 
-    @files = Dir.glob("#{path}/*.mp3")
-    @files.collect do |file|
-      file[21..-1]
-    end
+    @files = Dir.glob("#{@path}/*.mp3")
+   # @files.collect do |file|
+   #   file[21..-1]
+    #end
   end
   
   def import
